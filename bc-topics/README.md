@@ -16,7 +16,15 @@ One of the hallmarks of object-oriented design and programming is *data encapsul
 ...that your type’s fields should never be publicly exposed because it’s too easy to write code
 that improperly uses the fields, corrupting the object’s state.
 
+#### Memento Pattern
+Without violating *encapsulation*, capture and externalize an object's internal state
+so that the object can be restored to this state later.
+
+> **Role**
+
+This pattern is used to capture an object’s internal state and save it externally so that
+it can be restored later.
+
 > Memento pattern class diagram
 
 ![](https://github.com/raman-m/dotnet/blob/master/bc-topics/Memento_Pattern.svg)
-
