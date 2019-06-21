@@ -27,3 +27,6 @@ it can be restored later.
 
 ##### Memento Pattern class diagram
 ![](https://github.com/raman-m/dotnet/blob/master/bc-topics/OOP/Memento_Pattern.svg)
+
+### OOD Basics
+[Basics](Basics.md)
