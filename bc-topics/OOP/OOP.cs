@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BCTopics
+namespace BCTopics.OOP
 {
     public class OOP
     {

@@ -6,4 +6,8 @@
     <AssemblyName>BCTopics</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include=".NET\README.md" />
+  </ItemGroup>
+
 </Project>
