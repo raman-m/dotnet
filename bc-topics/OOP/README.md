@@ -1,4 +1,5 @@
-## OOP & Design
+## OOP & OOD
+**O**bject-**O**riented **P**rogramming & **O**bject-**O**riented **D**esign.
 
 ### OOP Encapsulation
 
@@ -20,11 +21,9 @@ that improperly uses the fields, corrupting the object’s state.
 Without violating *encapsulation*, capture and externalize an object's internal state
 so that the object can be restored to this state later.
 
-> **Role**
-
+##### Role
 This pattern is used to capture an object’s internal state and save it externally so that
 it can be restored later.
 
-> Memento pattern class diagram
-
-![](https://github.com/raman-m/dotnet/blob/master/bc-topics/Memento_Pattern.svg)
+##### Memento Pattern class diagram
+![](https://github.com/raman-m/dotnet/blob/master/bc-topics/OOP/Memento_Pattern.svg)
