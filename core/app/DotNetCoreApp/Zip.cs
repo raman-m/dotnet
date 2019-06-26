@@ -47,23 +47,15 @@ namespace DotNetCoreApp
 
             while (true)
             {
-                Console.Write("Input: ");
+                Console.Write("\nInput: ");
                 var input = Console.ReadLine();
 
                 var zip = new Zip();
                 var output = zip.Compress(input);
 
                 Console.WriteLine($"Output: '{output}'");
-                Console.WriteLine("\nTo exit press 'Q'\n");
-
-                var key = Console.ReadKey();
-                if (key.KeyChar == 'Q')
-                {
-                    Console.Write(" Quitting...");
+                if (ConsoleUtils.AskQuit())
                     return;
-                }
-                    
-                Console.SetCursorPosition(0, Console.CursorTop);
             }
         }
     }

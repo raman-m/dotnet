@@ -10,6 +10,8 @@ namespace DotNetCoreApp
             Console.WriteLine(".NET Core Console App");
 
             Zip.Run();
+
+            Algorithm.RunTripleFibonacci();
         }
     }
 }
