@@ -2,7 +2,7 @@
 > Design patterns codify general solutions to common problems.
 
 ### GoF Design Patterns
-There are 23 design patterns.
+There are 23 [GoF](https://en.wikipedia.org/wiki/Design_Patterns) design patterns.
 
 **Abstract Factory**. Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
