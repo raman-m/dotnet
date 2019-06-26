@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DotNetCoreApp
 {
@@ -6,21 +7,9 @@ namespace DotNetCoreApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(".NET Core Console App\nTo exit press 'Q'");
+            Console.WriteLine(".NET Core Console App");
 
-            while (true)
-            {
-                Console.Write("\nInput: ");
-                var input = Console.ReadLine();
-                var zip = new Zip();
-
-                var output = zip.Compress(input);
-
-                Console.WriteLine($"Output: '{output}'");
-                var key = Console.ReadKey();
-                if (key.KeyChar == 'Q')
-                    return;
-            }
+            Zip.Run();
         }
     }
 }

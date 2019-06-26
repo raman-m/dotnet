@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Text;
-//using System.
 
 namespace DotNetCoreApp
 {
@@ -40,6 +39,32 @@ namespace DotNetCoreApp
                 i = j;
             }
             return builder.ToString();
+        }
+
+        public static void Run()
+        {
+            Console.WriteLine("\nString Zip utility");
+
+            while (true)
+            {
+                Console.Write("Input: ");
+                var input = Console.ReadLine();
+
+                var zip = new Zip();
+                var output = zip.Compress(input);
+
+                Console.WriteLine($"Output: '{output}'");
+                Console.WriteLine("\nTo exit press 'Q'\n");
+
+                var key = Console.ReadKey();
+                if (key.KeyChar == 'Q')
+                {
+                    Console.Write(" Quitting...");
+                    return;
+                }
+                    
+                Console.SetCursorPosition(0, Console.CursorTop);
+            }
         }
     }
 }
