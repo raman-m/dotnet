@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotNetCoreApp\DotNetCoreApp.csproj" />
+    <ProjectReference Include="..\console\Challenges.Console.csproj" />
   </ItemGroup>
 
 </Project>
