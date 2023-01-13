@@ -1,35 +1,29 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using Xunit;
+namespace DotNetCoreApp.Tests;
 
-namespace DotNetCoreApp.Tests
+public class AlgorithmTests
 {
-    public class AlgorithmTests
+    [Fact]
+    public void TripleFibonacci_InitialConditions_ValueIsOne()
     {
-        [Fact]
-        public void TripleFibonacci_InitialConditions_ValueIsOne()
+        // Arrange
+        var stepNumbers = new int[3] { 1, 2, 3 };
+        var sut = new Algorithm();
+
+        Assert.All(stepNumbers, (stepNo) =>
         {
-            // Arrange
-            var stepNumbers = new int[3] { 1, 2, 3 };
-            var sut = new Algorithm();
+            // Act
+            var actual = sut.TripleFibonacci(stepNo);
 
-            Assert.All(stepNumbers, (stepNo) =>
-            {
-                // Act
-                var actual = sut.TripleFibonacci(stepNo);
+            // Assert
+            Assert.Equal(1, actual);
+        });
+    }
 
-                // Assert
-                Assert.Equal(1, actual);
-            });
-        }
-
-        [Fact]
-        public void TripleFibonacci_ParamIsGreaterThan3_ValueIsCorrect()
-        {
-            // Arrange
-            var expectedValues = new Dictionary<int, long>()
+    [Fact]
+    public void TripleFibonacci_ParamIsGreaterThan3_ValueIsCorrect()
+    {
+        // Arrange
+        var expectedValues = new Dictionary<int, long>()
             {
                 { 4, 3 },
                 { 5, 5 },
@@ -38,16 +32,15 @@ namespace DotNetCoreApp.Tests
                 { 8, 31 },
                 { 9, 57 }
             };
-            var sut = new Algorithm();
+        var sut = new Algorithm();
 
-            Assert.All(expectedValues, (pair) =>
-            {
-                // Act
-                var actual = sut.TripleFibonacci(pair.Key);
+        Assert.All(expectedValues, (pair) =>
+        {
+            // Act
+            var actual = sut.TripleFibonacci(pair.Key);
 
-                // Assert
-                Assert.Equal(pair.Value, actual);
-            });
-        }
+            // Assert
+            Assert.Equal(pair.Value, actual);
+        });
     }
 }

@@ -1,62 +1,63 @@
-using System;
-using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace DotNetCoreApp
+namespace DotNetCoreApp;
+
+public class Zip
 {
-    public class Zip
+    public string Compress(Stream stream)
     {
-        public string Compress(Stream stream)
+        // 1. Open file
+        return string.Empty;
+    }
+
+    public string Compress(string input)
+    {
+        if (String.IsNullOrEmpty(input))
         {
-            // 1. Open file
-            return string.Empty;
+            return input;
         }
 
-        public string Compress(string input)
+        var builder = new StringBuilder(input.Length);
+        int i = 0;
+        while (i <= input.Length - 1)
         {
-            if (String.IsNullOrEmpty(input))
+            var j = i;
+            char ch = input[i],
+                nextCh = ch;
+            while (ch == nextCh && j++ < input.Length - 1)
             {
-                return input;
+                nextCh = input[j];
+            }
+            if (j - i > 1)
+            {
+                builder.Append(j - i);
             }
 
-            var builder = new StringBuilder(input.Length);
-            int i = 0;
-            while (i <= input.Length - 1)
-            {
-                var j = i;
-                char ch = input[i],
-                    nextCh = ch;
-                while (ch == nextCh && j++ < input.Length - 1)
-                {
-                    nextCh = input[j];
-                }
-                if (j - i > 1)
-                {
-                    builder.Append(j - i);
-                }
-                
-                builder.Append(ch);
-                i = j;
-            }
-            return builder.ToString();
+            builder.Append(ch);
+            i = j;
         }
+        return builder.ToString();
+    }
 
-        public static void Run()
+    public static void Run()
+    {
+        Console.WriteLine("\nString Zip utility");
+
+        while (true)
         {
-            Console.WriteLine("\nString Zip utility");
+            Console.Write("\nInput: ");
+            var input = Console.ReadLine();
 
-            while (true)
-            {
-                Console.Write("\nInput: ");
-                var input = Console.ReadLine();
+            var zip = new Zip();
+            var output = zip.Compress(input);
 
-                var zip = new Zip();
-                var output = zip.Compress(input);
-
-                Console.WriteLine($"Output: '{output}'");
-                if (ConsoleUtils.AskQuit())
-                    return;
-            }
+            Console.WriteLine($"Output: '{output}'");
+            if (ConsoleUtils.AskQuit())
+                return;
         }
     }
 }

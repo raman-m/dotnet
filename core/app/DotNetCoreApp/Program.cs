@@ -1,17 +1,10 @@
-﻿using System;
+﻿using DotNetCoreApp;
+using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 
-namespace DotNetCoreApp
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(".NET Core Console App");
+Console.WriteLine(".NET Core Console App");
 
-            Zip.Run();
+Zip.Run();
 
-            Algorithm.RunTripleFibonacci();
-        }
-    }
-}
+Algorithm.RunTripleFibonacci();
