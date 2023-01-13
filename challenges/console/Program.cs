@@ -1,10 +1,13 @@
-﻿using DotNetCoreApp;
-using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
+﻿using Challenges;
+using Challenges.Console;
 
-Console.WriteLine(".NET Core Console App");
+Console.WriteLine("Challenges Demo App");
 
-Zip.Run();
+while (true)
+{
+    Zip.Run();
+    if (ConsoleUtils.AskQuit())
+        break;
+}
 
-Algorithm.RunTripleFibonacci();
+Algorithm.RunTripleFibonacci(1);

@@ -1,4 +1,4 @@
-namespace DotNetCoreApp.Tests;
+namespace Challenges.Tests;
 
 public class AlgorithmTests
 {

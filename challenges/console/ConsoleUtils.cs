@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using static System.Console;
 
-namespace DotNetCoreApp;
+namespace Challenges.Console;
 
 public static class ConsoleUtils
 {
     public static bool AskQuit()
     {
         const string message = "To exit press 'Q'";
-        Console.Write(message);
+        Write(message);
 
-        var key = Console.ReadKey();
+        var key = ReadKey();
         if (key.KeyChar == 'Q')
         {
             ClearLine(message.Length + 1);
-            Console.Write("Quitting...");
+            Write("Quitting...");
             return true;
         }
 
@@ -27,8 +23,8 @@ public static class ConsoleUtils
 
     public static void ClearLine(int length)
     {
-        Console.SetCursorPosition(0, Console.CursorTop);
-        Console.Write(new string(' ', ++length));
-        Console.SetCursorPosition(0, Console.CursorTop);
+        SetCursorPosition(0, CursorTop);
+        Write(new string(' ', ++length));
+        SetCursorPosition(0, CursorTop);
     }
 }

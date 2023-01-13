@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DotNetCoreApp;
+﻿namespace Challenges;
 
 public class Algorithm
 {
@@ -51,18 +45,20 @@ public class Algorithm
         Console.WriteLine($"Value: {value}, {overflow}, {remainder}");
     }
 
-    public static void RunTripleFibonacci()
+    public static void RunTripleFibonacci(int step)
     {
-        Console.WriteLine("\n\nAlgorithm NoFibonacci utility");
+        Console.WriteLine("\n\nTriple Fibonacci utility");
 
         var algo = new Algorithm();
-        var step = 47;
         while (true)
         {
             PrintTripleFibonacci(step++, algo.TripleFibonacci);
 
-            if (ConsoleUtils.AskQuit())
-                return;
+            Console.Write("Next step? Any Key to make next step, or Enter to quit...");
+            var info = Console.ReadKey();
+            Console.WriteLine();
+            if (info.Key == ConsoleKey.Enter)
+                break;
         }
     }
 }

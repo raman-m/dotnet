@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DotNetCoreApp;
+﻿namespace Challenges;
 
 public class Zip
 {
@@ -47,17 +41,12 @@ public class Zip
     {
         Console.WriteLine("\nString Zip utility");
 
-        while (true)
-        {
-            Console.Write("\nInput: ");
-            var input = Console.ReadLine();
+        Console.Write("\nInput: ");
+        var input = Console.ReadLine();
 
-            var zip = new Zip();
-            var output = zip.Compress(input);
+        var zip = new Zip();
+        var output = zip.Compress(input);
 
-            Console.WriteLine($"Output: '{output}'");
-            if (ConsoleUtils.AskQuit())
-                return;
-        }
+        Console.WriteLine($"Output: '{output}'");
     }
 }
