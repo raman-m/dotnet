@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.Console", "console\Challenges.Console.csproj", "{D92CD541-4986-4830-BACC-E35E1DF85C3E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.Tests", "tests\Challenges.Tests.csproj", "{84230FFA-CECC-4668-B404-B3D1A6C3B57F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.Tests", "tests\ch\Challenges.Tests.csproj", "{84230FFA-CECC-4668-B404-B3D1A6C3B57F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenges", "src\Challenges\Challenges.csproj", "{D5477928-95A1-4C59-B6A1-128E84F8E37A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenges", "src\ch\Challenges.csproj", "{D5477928-95A1-4C59-B6A1-128E84F8E37A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
