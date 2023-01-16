@@ -1,5 +1,5 @@
-﻿using Challenges;
-using Challenges.Console;
+﻿using RamanM.DotNet.Challenges;
+using RamanM.DotNet.Challenges.Console;
 
 Console.WriteLine("Challenges Demo App");
 

@@ -1,6 +1,6 @@
 ﻿using static System.Console;
 
-namespace Challenges.Console;
+namespace RamanM.DotNet.Challenges.Console;
 
 public static class ConsoleUtils
 {

@@ -1,4 +1,4 @@
-﻿namespace Challenges.Tests;
+﻿namespace RamanM.DotNet.Challenges.Tests;
 
 public class ZipTests
 {

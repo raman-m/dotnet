@@ -1,4 +1,4 @@
-﻿namespace Challenges;
+﻿namespace RamanM.DotNet.Challenges;
 
 public class Zip
 {
