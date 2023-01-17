@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Reflection;
+
+var asm = Assembly.GetExecutingAssembly();
+var solutionName = asm.GetName().Name.Replace(".", " ");
+
+Console.WriteLine($"Welcome to '{solutionName}' app!");

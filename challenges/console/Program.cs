@@ -1,7 +1,11 @@
 ﻿using RamanM.DotNet.Challenges;
 using RamanM.DotNet.Challenges.Console;
+using System.Reflection;
 
-Console.WriteLine("Challenges Demo App");
+var asm = Assembly.GetExecutingAssembly();
+var solutionName = asm.GetName().Name.Replace(".", " ");
+
+Console.WriteLine($"Welcome to '{solutionName}' app!");
 
 while (true)
 {
