@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>RamanM.DotNet.Solutions.Console</AssemblyName>
+    <RootNamespace>RamanM.DotNet.Solutions.Console</RootNamespace>
+  </PropertyGroup>
+
+</Project>

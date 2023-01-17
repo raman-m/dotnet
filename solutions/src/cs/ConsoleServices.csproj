@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>RamanM.DotNet.Solutions.ConsoleServices</AssemblyName>
+    <RootNamespace>RamanM.DotNet.Solutions.ConsoleServices</RootNamespace>
+  </PropertyGroup>
+
+</Project>
