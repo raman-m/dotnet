@@ -1,5 +1,5 @@
 ﻿namespace RamanM.DotNet.Algorithms;
 
-public class Class1
+public class VectorSimilarity
 {
 }

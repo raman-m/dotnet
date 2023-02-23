@@ -1,6 +1,6 @@
 namespace RamanM.DotNet.Algorithms.Tests;
 
-public class UnitTest1
+public class VectorSimilarityTests
 {
     [Fact]
     public void Test1()
