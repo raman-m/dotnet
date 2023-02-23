@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleServices", "solutions\src\cs\ConsoleServices.csproj", "{E4E315CC-5937-4CBF-B13F-F6947375F000}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleServices.Tests", "solutions\tests\cs\ConsoleServices.Tests.csproj", "{E395516D-2A4A-4EFA-B34D-17204588F7F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleServices.Tests", "solutions\tst\cs\ConsoleServices.Tests.csproj", "{E395516D-2A4A-4EFA-B34D-17204588F7F8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solutions.Console", "solutions\console\Solutions.Console.csproj", "{B240CC24-C051-4796-842F-88E36C5D9DB0}"
 EndProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Challenges", "Challenges", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges", "challenges\src\ch\Challenges.csproj", "{0D355A97-1C6A-4B60-8090-63FBFE9F19C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.Tests", "challenges\tests\ch\Challenges.Tests.csproj", "{84FD53A9-BAB7-46FC-9803-17A2810DD87A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.Tests", "challenges\tst\ch\Challenges.Tests.csproj", "{84FD53A9-BAB7-46FC-9803-17A2810DD87A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.Console", "challenges\console\Challenges.Console.csproj", "{216BE97F-6C18-4301-9F5F-D539B7376E5A}"
 EndProject

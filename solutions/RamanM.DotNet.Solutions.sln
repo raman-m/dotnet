@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solutions.Console", "consol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleServices", "src\cs\ConsoleServices.csproj", "{7E605B0F-2DE2-4404-9816-AD430A07F24B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleServices.Tests", "tests\cs\ConsoleServices.Tests.csproj", "{0A62D66E-A9DB-4A01-8E0B-B7A5960D4437}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleServices.Tests", "tst\cs\ConsoleServices.Tests.csproj", "{0A62D66E-A9DB-4A01-8E0B-B7A5960D4437}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
