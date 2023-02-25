@@ -36,5 +36,11 @@ and finally that all values are finite non-zero floating point numbers (i.e. not
 
 The implementation must have O(N) complexity, where N is the length of the union of the keys of **a** and **b**.
 
+## Open source implementations
+[@taki0112/Vector_Similarity](https://github.com/taki0112/Vector_Similarity):[^2] Python, Java implementation of TS-SS called from "A Hybrid Geometric Approach for Measuring Similarity Level Among Documents and Document Clustering".
+- Implemented in Java: `Vector_Similarity.Cosine` function in [Vector_Similarity.java, Line 12](https://github.com/taki0112/Vector_Similarity/blob/master/java/TS_SS/src/Vector_Similarity.java#L12)
+- Implemented in Python: `Cosine(vec1, vec2)` function in [Vector_Similarity.py, Line 3](https://github.com/taki0112/Vector_Similarity/blob/master/python/TS_SS/Vector_Similarity.py#L3)
+
 ### References
 [^1]: Wikipedia: [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
+[^2]: GitHub: [taki0112/Vector_Similarity](https://github.com/taki0112/Vector_Similarity) by [Junho Kim](https://github.com/taki0112)
